@@ -28,18 +28,84 @@ export default function AmazonFbaPage() {
     <div className="bg-white">
 
       {/* HERO */}
-      <section className="bg-slate-50 border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl font-black text-slate-900">
-            Amazon FBA Fulfillment Services
-          </h1>
+      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-blue-50 via-white to-white">
 
-          <p className="mt-4 text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed">
-            End-to-end Amazon FBA preparation, logistics, and shipment management.
-          </p>
-        </div>
-      </section>
+  {/* Glow */}
+  <div
+    className="
+      absolute
+      top-[-250px]
+      left-1/2
+      -translate-x-1/2
+      w-[700px]
+      h-[700px]
+      bg-blue-300
+      opacity-20
+      blur-3xl
+      rounded-full
+    "
+  />
 
+  <div className="relative max-w-6xl mx-auto px-4 py-28 text-center">
+
+    <div className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-blue-100 shadow-sm text-xs font-bold text-blue-600 uppercase tracking-wider mb-8">
+      Amazon FBA • Logistics • Fulfillment
+    </div>
+
+    <h1 className="text-5xl md:text-6xl font-black text-slate-900 leading-tight">
+
+      Amazon FBA
+
+      <span className="block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+        Fulfillment Services
+      </span>
+
+    </h1>
+
+    <p className="mt-8 text-slate-500 text-lg max-w-3xl mx-auto leading-relaxed">
+      End-to-end Amazon FBA preparation, logistics,
+      shipment management and warehouse operations.
+    </p>
+
+    <div className="mt-10 flex justify-center gap-4">
+
+      <button
+        className="
+          px-8
+          py-4
+          rounded-2xl
+          bg-gradient-to-r
+          from-blue-600
+          to-cyan-500
+          text-white
+          font-bold
+          shadow-xl
+          hover:scale-[1.03]
+          transition
+        "
+      >
+        Get Started
+      </button>
+
+      <button
+        className="
+          px-8
+          py-4
+          rounded-2xl
+          border
+          font-semibold
+          hover:bg-white
+          transition
+        "
+      >
+        Learn More
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* WHAT IS IT */}
       <section className="max-w-5xl mx-auto px-4 py-16">

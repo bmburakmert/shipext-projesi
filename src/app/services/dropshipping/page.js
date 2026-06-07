@@ -15,15 +15,87 @@ export default function DropshippingPage() {
   return (
     <div className="bg-white">
       {/* HERO SECTION */}
-      <section className="bg-slate-50 py-24 border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-black text-slate-950 mb-6">Dropshipping Excellence</h1>
-          <p className="text-slate-600 text-lg leading-relaxed">
-            Scale your e-commerce brand globally without the logistical overhead of inventory. 
-            Shipext provides the end-to-end infrastructure you need to turn your online store into a high-performance machine.
-          </p>
-        </div>
-      </section>
+     {/* HERO SECTION */}
+<section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-blue-50 via-white to-white">
+
+  {/* Glow */}
+  <div
+    className="
+      absolute
+      top-[-250px]
+      left-1/2
+      -translate-x-1/2
+      w-[700px]
+      h-[700px]
+      bg-blue-300
+      opacity-20
+      blur-3xl
+      rounded-full
+    "
+  />
+
+  <div className="relative max-w-5xl mx-auto px-4 py-28 text-center">
+
+    <div className="inline-flex items-center px-5 py-2 rounded-full bg-white border border-blue-100 shadow-sm text-xs font-bold text-blue-600 uppercase tracking-wider mb-8">
+      Dropshipping • Fulfillment • Global Logistics
+    </div>
+
+    <h1 className="text-5xl md:text-6xl font-black leading-tight text-slate-950">
+
+      Dropshipping
+
+      <span className="block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+        Excellence
+      </span>
+
+    </h1>
+
+    <p className="mt-8 text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
+      Scale your e-commerce brand globally without inventory overhead.
+      Shipext handles fulfillment, warehousing and shipping while you grow.
+    </p>
+
+    <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+      <button
+        className="
+          px-8
+          py-4
+          rounded-2xl
+          bg-gradient-to-r
+          from-blue-600
+          to-cyan-500
+          text-white
+          font-bold
+          shadow-xl
+          hover:scale-[1.03]
+          hover:shadow-2xl
+          transition-all
+        "
+      >
+        Start Scaling
+      </button>
+
+      <button
+        className="
+          px-8
+          py-4
+          rounded-2xl
+          border
+          border-slate-300
+          bg-white
+          hover:bg-slate-50
+          transition
+        "
+      >
+        Learn More
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* DETAILED CONTENT */}
       <section className="max-w-4xl mx-auto px-4 py-20">

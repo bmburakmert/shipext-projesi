@@ -13,14 +13,41 @@ export default function FulfillmentPage() {
   return (
     <div className="bg-white">
       {/* HERO SECTION */}
-      <section className="bg-slate-50 py-24 border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-black text-slate-950 mb-6 leading-tight">Professional E-commerce Fulfillment Services</h1>
-          <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            Shipext transforms your logistical challenges into a competitive advantage. Scale your business with high-speed fulfillment, precision inventory management, and reliable global shipping.
-          </p>
-        </div>
-      </section>
+      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-blue-50 via-white to-white">
+
+  <div className="
+    absolute
+    top-[-250px]
+    left-1/2
+    -translate-x-1/2
+    w-[700px]
+    h-[700px]
+    bg-blue-300
+    opacity-20
+    blur-3xl
+    rounded-full
+  " />
+
+  <div className="relative max-w-4xl mx-auto px-4 py-28 text-center">
+
+    <div className="inline-flex items-center px-5 py-2 rounded-full bg-white border border-blue-100 shadow-sm text-xs font-bold text-blue-600 uppercase tracking-wider mb-8">
+      Fulfillment • Logistics • Scaling
+    </div>
+
+    <h1 className="text-5xl md:text-6xl font-black text-slate-950 leading-tight">
+      Professional E-commerce
+      <span className="block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+        Fulfillment Services
+      </span>
+    </h1>
+
+    <p className="mt-8 text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
+      Shipext transforms logistics into a competitive advantage with fast, reliable and scalable fulfillment operations.
+    </p>
+
+  </div>
+
+</section>
 
       {/* DETAILED SEO CONTENT */}
       <section className="max-w-4xl mx-auto px-4 py-20">

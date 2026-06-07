@@ -1,117 +1,110 @@
-import Link from 'next/link';
+import Link from "next/link";
+
+const footerData = {
+  brand: {
+    name: "SHIPEXT",
+    desc: "Pick & Pack & Ship, FBA (Fulfillment By Amazon), FBM (Fulfillment By Merchant), Return Management and more.",
+  },
+
+  services: [
+    { label: "Amazon FBA", href: "/services/amazon-fba" },
+    { label: "Dropshipping", href: "/services/dropshipping" },
+    { label: "Fulfillment", href: "/services/fulfillment" },
+    { label: "Storage", href: "/services/storage" },
+  ],
+
+  quickLinks: [
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
+    { label: "Terms & Conditions", href: "/terms" },
+    { label: "Privacy Policy", href: "/privacy" },
+  ],
+
+  contact: {
+    address: "United Kingdom",
+    phone: "+90 553 823 95 00",
+    email: "info@shipext.com",
+  },
+};
 
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400 pt-16 pb-12 border-t border-slate-800 w-full">
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-        
-        {/* Brand */}
+
+        {/* BRAND */}
         <div>
           <span className="text-white text-xl font-black tracking-wider">
-            SHIPEXT
+            {footerData.brand.name}
           </span>
 
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
-            Pick & Pack & Ship, FBA (Fulfillment By Amazon),
-            FBM (Fulfillment By Merchant), Return Management
-            and more.
+            {footerData.brand.desc}
           </p>
         </div>
 
-        {/* Services */}
+        {/* SERVICES */}
         <div>
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">
             Our Services
           </h4>
 
           <ul className="space-y-3 text-sm font-medium">
-            <li>
-              <Link href="/services" className="hover:text-white transition">
-                Amazon FBA
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/services" className="hover:text-white transition">
-                Dropshipping
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/services" className="hover:text-white transition">
-                Fulfillment
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/services" className="hover:text-white transition">
-                Storage
-              </Link>
-            </li>
+            {footerData.services.map((item, i) => (
+              <li key={i}>
+                <Link href={item.href} className="hover:text-white transition">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Quick Links */}
+        {/* QUICK LINKS */}
         <div>
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">
             Quick Links
           </h4>
 
           <ul className="space-y-3 text-sm font-medium">
-            <li>
-              <Link href="/services" className="hover:text-white transition">
-                About
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/contact" className="hover:text-white transition">
-                Contact
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#" className="hover:text-white transition">
-                Terms & Conditions
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#" className="hover:text-white transition">
-                Privacy Policy
-              </Link>
-            </li>
+            {footerData.quickLinks.map((item, i) => (
+              <li key={i}>
+                <Link href={item.href} className="hover:text-white transition">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Information */}
+        {/* CONTACT */}
         <div>
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">
             Information
           </h4>
 
           <p className="text-sm text-slate-400 leading-relaxed">
-            Address: United Kingdom
+            Address: {footerData.contact.address}
           </p>
 
           <p className="text-sm mt-3 text-slate-300 font-semibold">
-            +44 73 88 211 602
+            {footerData.contact.phone}
           </p>
 
           <a
-            href="mailto:info@fullfillonus.com"
+            href={`mailto:${footerData.contact.email}`}
             className="text-sm text-blue-400 font-semibold hover:underline"
           >
-            info@shipext.com
+            {footerData.contact.email}
           </a>
         </div>
 
       </div>
 
-      {/* Bottom */}
+      {/* BOTTOM */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 tracking-wide font-medium">
-        © 2026 SHIPEXT. All rights reserved.
+        © 2026 {footerData.brand.name}. All rights reserved.
       </div>
 
     </footer>
