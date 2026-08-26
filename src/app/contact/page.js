@@ -61,7 +61,7 @@ export default function Contact() {
 
             <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50 hover:shadow-md transition">
               <p className="font-bold text-slate-900">✉️ Email</p>
-              <p className="text-slate-600">shipextltd@gmail.com</p>
+              <p className="text-slate-600">info@shipext.com</p>
             </div>
 
           </div>
